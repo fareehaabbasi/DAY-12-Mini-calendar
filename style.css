@@ -1,0 +1,84 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Calendar Card */
+.calendar {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 320px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: fadeIn 1s ease-in-out;
+  transition: transform 0.3s;
+}
+.calendar:hover {
+  transform: translateY(-8px);
+}
+
+/* Month */
+.month {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #4f46e5;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+/* Day */
+.day {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #111827;
+  margin: 15px 0;
+  line-height: 1;
+}
+
+/* Weekday */
+.weekday {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+/* Year */
+.year {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #9ca3af;
+  letter-spacing: 1px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .calendar {
+    padding: 20px;
+  }
+  .day {
+    font-size: 3.5rem;
+  }
+  .month {
+    font-size: 1.2rem;
+  }
+}
